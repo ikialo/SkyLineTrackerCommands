@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ListNumbersActivity">
+
+
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/saveCarPhone"
+        android:paddingLeft="15sp"
+        android:hint="Input Tracker Sim Number to Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/plateNumber"
+        android:paddingLeft="15sp"
+        android:hint="Vehicle Name/Plate Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:textColor="@color/colorWhite"
+        android:id="@+id/save"
+        android:background="@drawable/custom_button"
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:gravity="center"
+        android:text="FLEET"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recviewListCars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
